@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #f5f5f5;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+button {
+  margin: 5px 10px 20px 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+pre#finalOutput {
+  display: none; /* приховане по замовчуванню */
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}
+
+.buttons-row {
+  margin-bottom: 20px;
+}
