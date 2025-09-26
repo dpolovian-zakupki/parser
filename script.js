@@ -1,5 +1,5 @@
 // ------------------- Крок 1: Очищення вхідного тексту -------------------
-function cleanInput() {
+function cleanInput() { 
   let text = document.getElementById("inputText").value;
 
   // Збереження email-ів
@@ -7,6 +7,8 @@ function cleanInput() {
 
   // Видаляємо номери телефонів
   text = text.replace(/\+?\d{1,3}[\s\-]?\(?\d{2,3}\)?[\s\-]?\d{2,3}[\s\-]?\d{2}[\s\-]?\d{2}/g, "");
+
+  text = text.replace(/(ЄДРПОУ\s*:?\s*)\d+/gi, "$1"); 
 
   // ------------------- Крок 1a: Видалення заборонених слів -------------------
   const forbiddenWords = ["привіт", "марина", "маріна", "ден", "денчик", "денис"];
