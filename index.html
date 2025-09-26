@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>AI Text Parser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Парсер звернень</h2>
+
+  <p>Вхідний текст:</p>
+  <textarea id="inputText"></textarea>
+  <button onclick="cleanInput()">Очистити</button>
+
+  <p>Очищений текст:</p>
+  <textarea id="cleanedText"></textarea>
+  <div class="buttons-row">
+    <button onclick="copyCleanedText()">Скопіювати</button>
+    <button onclick="processCleaned()">Обробити</button>
+  </div>
+
+  <p>Фінальний результат:</p>
+  <pre id="finalOutput"></pre>
+  <button onclick="copyFinalText()">Скопіювати фінальний результат</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
