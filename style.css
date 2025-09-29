@@ -1,44 +1,76 @@
+/* Загальні стилі сторінки */
 body {
   font-family: Arial, sans-serif;
   margin: 30px;
-  background: #f5f5f5;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
+/* Поля textarea */
 textarea {
   width: 100%;
   min-height: 120px;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   resize: vertical;
   margin-bottom: 10px;
   font-size: 14px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
 }
 
+/* Кнопки */
 button {
-  margin: 5px 10px 20px 0;
-  padding: 8px 14px;
+  margin: 5px 10px 5px 0;
+  padding: 8px 16px;
   font-size: 14px;
   border: none;
   border-radius: 6px;
-  background-color: #007bff;
-  color: white;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-button:hover {
-  background-color: #0056b3;
+/* Основна кнопка (Обробити, Скопіювати) */
+button.process {
+  background-color: #4caf50;
+  color: white;
 }
 
+button.process:hover {
+  background-color: #43a047;
+}
+
+/* Кнопка Очистити */
+button.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+button.clear:hover {
+  background-color: #d32f2f;
+}
+
+/* Ряд кнопок */
+.buttons-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Фінальний результат */
 pre#finalOutput {
-  display: none; /* приховане по замовчуванню */
-  background: #fff;
+  display: block; /* завжди видиме */
+  background-color: #1e1e1e;
+  color: #e0e0e0;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   white-space: pre-wrap;
+  min-height: 120px; /* мінімальна висота */
 }
 
-.buttons-row {
-  margin-bottom: 20px;
+/* Приховані елементи */
+.hide {
+  display: none;
 }
